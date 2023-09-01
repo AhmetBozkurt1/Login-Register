@@ -2,32 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
 }
 .sign-in{
     background-color: #E55807;
     border-radius: 30px 0 0 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all .3s;
+    z-index: 2;
 }
 .sign-up{
-    border: 2px solid red;
+    border-radius: 0 30px 30px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all .3s;
+    z-index: 0;
 }
 .signIn-welcome{
     padding: 0 3rem;
 }
 .signIn-welcome h1{
-    font-size: 63px;
+    font-size: 3.5rem;
     font-weight: 800;
     color: #fff;
     margin-bottom: 2rem;
 }
 .signIn-welcome h6{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
     margin-bottom: 3rem;
 }
 .signIn-welcome button{
     border: 2px solid #fff;
-    padding: .5rem 3.5rem;
+    padding: .8rem 3.5rem;
     background-color: #E55807;
     color: #fff;
     border-radius: 30px;
@@ -39,6 +46,7 @@
 .sıgnUp-register h1{
     font-size: 63px;
     font-weight: 800;
+    margin-bottom: 2rem;
 }
 .iconList{
     display: flex;
@@ -47,10 +55,60 @@
 }
 .iconList li{
     list-style: none;
+    border: 1px solid gray;
+    border-radius: 100%;
 }
 .iconList li a{
-    font-size: 25px;
-    border: 1px solid gray;
-    padding: 1rem;
-    border-radius: 100%;
+    font-size: 23px;
+}
+.fa-google-plus-g{
+    padding: 1rem 1rem;
+}
+.fa-facebook-f{
+    padding: 1rem 1.3rem;
+}
+.fa-linkedin-in{
+    padding: 1rem 1.3rem;
+}
+.sıgnUp-registerText{
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.formInput input{
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+    background-color: #EEEEEE;
+    color: #1d1d1d;
+    border: none;
+    font-size: 1.1rem;
+}
+.formInput input:focus{
+    outline: none;
+}
+.formInput input::placeholder{
+    color: #B2B2B2;
+}
+.sıgnUp-registerButton{
+    display: inline-block;
+    margin-top: 2rem;
+    border: none;
+    color: #fff;
+    background-color: #E55807;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: .8rem 3.5rem;
+    border-radius: 40px;
+}
+
+
+.container.right-panel .sign-in{
+    transform: translateX(100%);
+}
+.container.right-panel .sign-up{
+    transform: translateX(-100%);
 }
