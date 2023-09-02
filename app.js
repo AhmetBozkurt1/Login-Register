@@ -3,16 +3,20 @@ const sıgnUpBtn=document.querySelector(".sıgnUp-registerButton")
 const signIn=document.querySelector(".sign-in")
 const signUp=document.querySelector(".sign-up")
 
-
+const signInHtml=signIn.innerHTML
+const signUpHtml=signUp.innerHTML
 
 
 sıgnInBtn.addEventListener("click",function(){
     document.querySelector(".container").classList.add("right-panel")
     signIn.style.borderRadius="0px 30px 30px 0px"
     signUp.style.borderRadius="30px 0px 0px 30px"
+    signIn.innerText="Ahmet"
 })
 sıgnUpBtn.addEventListener("click",function(){
     document.querySelector(".container").classList.remove("right-panel")
     signIn.style.borderRadius="30px 0px 0px 30px"
     signUp.style.borderRadius="0px 30px 30px 0px"
+    signIn.innerHTML=signInHtml
+    signUp.innerHTML=signUpHtml
 })
