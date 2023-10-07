@@ -1,3 +1,4 @@
+
 const sıgnInBtn=document.querySelector(".sıgnIn-Button")
 const sıgnUpBtn=document.querySelector(".sıgnUp-registerButton")
 const signIn=document.querySelector(".sign-in")
@@ -6,9 +7,9 @@ let signInWelcome=document.querySelector(".signIn-welcome")
 let signInWelcomeYan=document.querySelector("#yanMenu")
 let signUpRegister=document.querySelector(".sıgnUp-register")
 let signUpRegisterYan=document.querySelector("#yanRegister")
-const yanSignInBtn = document.querySelector("#yanRegister .sıgnUp-registerButton");
+const yanSignUpBtn = document.querySelector("#yanMenu .sıgnIn-Button");
 sıgnUpBtn.addEventListener("click", toggleSignUp);
-yanSignInBtn.addEventListener("click", toggleSignUp);
+yanSignUpBtn.addEventListener("click", toggleSignUp);
 
 sıgnInBtn.addEventListener("click",function(){
     document.querySelector(".container").classList.add("right-panel")
@@ -34,16 +35,3 @@ function toggleSignUp() {
 
 
 
-
-
-
-
-// sıgnUpBtn.addEventListener("click",function(){
-//     document.querySelector(".container").classList.remove("right-panel")
-//     signIn.style.borderRadius="30px 0px 0px 30px"
-//     signUp.style.borderRadius="0px 30px 30px 0px"
-//     signInWelcome.style.display="block"
-//     signInWelcomeYan.style.display="none"
-//     signUpRegister.style.display="block"
-//     signUpRegisterYan.style.display="none"
-// })
